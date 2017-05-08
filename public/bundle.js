@@ -24952,9 +24952,11 @@
 	    openweatherMap.getTemp(location).then(function (temp) {
 	      this.setState({
 	        location: location,
-	        temp: temp
+	        temp: temp,
+	        isLoading: false
 	      });
 	    }, function (errorMessage) {
+	      that.setState({ isLoading: false });
 	      alert(errorMessage);
 	    });
 	  },
@@ -28640,17 +28642,23 @@
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var Examples = React.createClass({
-	  displayName: 'Examples',
+	var Examples = function Examples(props) {
 
-	  render: function render() {
-	    return React.createElement(
+	  return React.createElement(
+	    'div',
+	    null,
+	    React.createElement(
 	      'h3',
 	      null,
-	      'Examples vova'
-	    );
-	  }
-	});
+	      'Examples'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Welcome to Examples page!'
+	    )
+	  );
+	};
 
 	module.exports = Examples;
 
