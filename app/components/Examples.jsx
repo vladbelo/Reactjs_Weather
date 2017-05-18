@@ -16,9 +16,7 @@ var Examples = (props) => {
         <Link to='/?location=Rio'>Rio, Brazil</Link>
       </li>
     </ol>
-
-
-    /div>
+</div>
     )
 
 };
