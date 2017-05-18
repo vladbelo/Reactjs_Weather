@@ -28677,26 +28677,28 @@
 /* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function($) {'use strict';
+	'use strict';
 
 	var React = __webpack_require__(8);
 
-	$('p');
-
-	var About = React.createClass({
-	  displayName: 'About',
-
-	  render: function render() {
-	    return React.createElement(
+	var About = function About(props) {
+	  return React.createElement(
+	    'div',
+	    null,
+	    React.createElement(
 	      'h3',
 	      null,
 	      'About Us Page'
-	    );
-	  }
-	});
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Welcome to the about page'
+	    )
+	  );
+	};
 
 	module.exports = About;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
 
 /***/ }),
 /* 259 */
