@@ -33,7 +33,9 @@ plugins: [
       WeatherMessage: 'app/components/WeatherMessage.jsx',
       About: 'app/components/About.jsx',
       Examples: 'app/components/Examples.jsx',
-      openweatherMap: 'app/api/openweatherMap.jsx'
+      openweatherMap: 'app/api/openweatherMap.jsx',
+      ErrorModal: 'app/components/ErrorModal.jsx',
+      applicationStyle: 'app/styles/app.css'
 
     },
     extensions: ['', '.js', '.jsx']
