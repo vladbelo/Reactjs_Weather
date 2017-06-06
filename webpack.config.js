@@ -35,7 +35,7 @@ plugins: [
       Examples: 'app/components/Examples.jsx',
       openweatherMap: 'app/api/openweatherMap.jsx',
       ErrorModal: 'app/components/ErrorModal.jsx',
-      applicationStyle: 'app/styles/app.css'
+      applicationStyle: 'app/styles/app.scss'
 
     },
     extensions: ['', '.js', '.jsx']
